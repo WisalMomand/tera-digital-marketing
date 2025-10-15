@@ -1,5 +1,5 @@
 import React from "react";
-import "./Company.css";          
+import "./company.css";          
 import YoungImage from "../../assets/Young.png"; 
 
 const Company = () => {
