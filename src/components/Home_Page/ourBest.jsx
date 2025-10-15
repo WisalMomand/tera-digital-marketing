@@ -1,5 +1,5 @@
 import React from "react";
-import "./OurBest.css";             
+import "./ourBest.css";             
 import BestImage from "../../assets/Best.png"; 
 
 const OurBest = () => {
