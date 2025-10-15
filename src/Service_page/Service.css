@@ -1,0 +1,154 @@
+/* ✅ Page Wrapper */
+.service-page {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ✅ Hero Section (Full width, no gap under header) */
+.service-hero {
+  background-image: url('/Service.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Full width */
+  margin: 0; /* Removes any outside gap */
+  padding: 0; /* Removes any internal spacing */
+  box-sizing: border-box;
+}
+
+/* ✅ Dark overlay for readability */
+.service-hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ Content aligned under overlay */
+.service-hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  color: #FFFFFF;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* ✅ Headings and Text */
+.service-main-heading {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #10B981;
+}
+
+.service-sub-heading {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.service-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 550px;
+  color: #FFFFFF;
+}
+
+/* ✅ Button */
+.contact-button {
+  background-color: #10B981;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.contact-button:hover {
+  background-color: #059669;
+  transform: translateY(-3px);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .service-sub-heading {
+    font-size: 48px;
+  }
+
+  .service-main-heading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-hero {
+    min-height: 80vh;
+    background-position: top center;
+  }
+
+  .service-main-heading {
+    font-size: 32px;
+  }
+
+  .service-sub-heading {
+    font-size: 40px;
+  }
+
+  .service-description {
+    font-size: 16px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-main-heading {
+    font-size: 26px;
+  }
+
+  .service-sub-heading {
+    font-size: 30px;
+  }
+
+  .service-description {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .contact-button {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .service-hero-content {
+    padding: 0 15px;
+  }
+}

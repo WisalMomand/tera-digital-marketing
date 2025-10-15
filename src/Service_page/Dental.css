@@ -1,0 +1,214 @@
+/* ===== DENTAL SECTION ===== */
+.dental-section {
+  padding: 3rem 2rem;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dental-container {
+  display: flex;
+  align-items: stretch;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: nowrap; /* desktop: side by side */
+}
+
+/* ===== LEFT IMAGE ===== */
+.dental-image-wrapper {
+  flex: 0 0 42%;
+  position: relative;
+}
+
+.dental-image {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.medical-cross {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: #036d4a;
+  color: #fff;
+  font-size: 3rem;
+  padding: 0.3rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== RIGHT CONTENT ===== */
+.dental-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dental-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f8c6a;
+  margin-bottom: 0.6rem;
+  text-align: left;
+}
+
+.dental-heading {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.highlight {
+  background-color: #00c6a7;
+  color: #000;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+.dental-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+/* ===== FEATURES GRID ===== */
+.dental-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
+}
+
+.feature h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #111;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* ============================== */
+/* ✅ RESPONSIVE STYLING SECTION */
+/* ============================== */
+
+/* Tablet: stack more compactly */
+@media (max-width: 1024px) {
+  .dental-container {
+    gap: 2rem;
+    max-width: 95%;
+  }
+
+  .dental-heading {
+    font-size: 2.2rem;
+  }
+
+  .dental-description {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .dental-image {
+    min-height: 380px;
+  }
+
+  .dental-features {
+    gap: 1.5rem 2rem;
+  }
+}
+
+/* Mobile Landscape & Small Tablets */
+@media (max-width: 768px) {
+  .dental-container {
+    flex-direction: column; /* Stack image and content */
+    align-items: center;
+    text-align: center;
+  }
+
+  .dental-image-wrapper {
+    flex: none;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .dental-image {
+    min-height: 320px;
+    border-radius: 16px;
+  }
+
+  .medical-cross {
+    font-size: 2.5rem;
+    bottom: -15px;
+    left: -15px;
+  }
+
+  .dental-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .dental-subtitle {
+    text-align: center;
+  }
+
+  .dental-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .dental-description {
+    font-size: 0.95rem;
+    margin: 0 auto 1.5rem;
+  }
+
+  .dental-features {
+    grid-template-columns: 1fr; /* 1 per row */
+    gap: 1.2rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .dental-section {
+    padding: 2rem 1rem;
+  }
+
+  .dental-heading {
+    font-size: 1.8rem;
+  }
+
+  .dental-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .dental-image {
+    min-height: 260px;
+  }
+
+  .medical-cross {
+    font-size: 2rem;
+    bottom: -10px;
+    left: -10px;
+  }
+
+  .feature h3 {
+    font-size: 1rem;
+  }
+
+  .feature p {
+    font-size: 0.9rem;
+  }
+}

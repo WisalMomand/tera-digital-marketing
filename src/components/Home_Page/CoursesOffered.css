@@ -1,0 +1,124 @@
+.courses-offered {            
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 0;         /* ⬅ remove default margin-top */
+  padding-top: 5px;     /* ⬅ small top padding for breathing room */
+  padding-bottom: 60px;  /* ⬅ keep some bottom padding for spacing below */
+}
+
+.courses-offered h2 {
+  font-size: 32px;
+  margin-top: 0;          /* no extra top margin */
+  margin-bottom: 8px;     /* small gap under heading */
+  color: #000080;
+  padding-left: 97px;
+}
+
+
+.courses-offered p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  max-width: 800px;
+  line-height: 1.6;
+   padding-left: 97px;
+}
+
+
+/* Cards */
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.course-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.course-content {
+  padding: 15px;
+}
+
+.course-card h4 {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+  color: #1a1a1a;
+}
+
+/* ✅ New row for duration and button */
+.course-footer {
+  display: flex;
+  justify-content: space-between;   /* ✅ Duration left, button right */
+  align-items: center;
+}
+
+.duration {
+  font-size: 14px;
+  color: #666;
+}
+
+.start-course-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.start-course-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .course-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .courses-offered {
+    text-align: center;
+    margin-top: 30px;              /* Slightly less margin for smaller screens */
+  }
+
+  .courses-offered p {
+    margin: 0 auto 30px;
+  }
+
+  .course-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .course-footer {
+    flex-direction: column;        /* Stack button below duration on small screens */
+    gap: 8px;
+  }
+
+  .start-course-btn {
+    width: 100%;
+  }
+}

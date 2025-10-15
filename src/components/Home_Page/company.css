@@ -1,0 +1,22 @@
+.company-section {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: none;        /* ✅ clean background like Hero */
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.company-image {
+  width: 97%;             /* ✅ match HeroSection width */
+  height: auto;
+  object-fit: cover; 
+   border-radius: 20px; 
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);     /* ✅ keep aspect ratio */
+}
+
+/* Optional: If you want to remove header effects when on company section */
+.header.company-section {
+  background: none;
+  align-items: stretch;    /* ✅ let image fill the height */
+}

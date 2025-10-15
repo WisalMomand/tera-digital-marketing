@@ -1,0 +1,110 @@
+/* Container */
+.faq-section {
+  max-width: 1080px;
+  margin: 5px auto;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 30px;
+}
+
+/* Header */
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.faq-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-style: bold;
+  color: #111111f6;
+  margin: 0;
+}
+
+.view-faqs-btn {
+  background-color: #ff4f5a;      /* Pinkish-red like screenshot */
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-faqs-btn:hover {
+  background-color: #e8434c;
+}
+
+/* FAQ List */
+.faq-list {
+  /* border: 1px solid #ddd; */
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* FAQ Items */
+.faq-item {
+  border-bottom: 1px solid #eee;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+/* Question Row */
+.faq-question {
+  padding: 15px 20px;
+  font-size: 19px;
+  color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: #fff;
+  transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+  background: #f9f9f9;
+}
+
+/* Plus/Minus Icon */
+.faq-icon {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Answer Text */
+.faq-answer {
+  padding: 15px 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  background: #fafafa;
+  color: #555;
+}
+
+/* Active State */
+.faq-item.active .faq-question {
+  background: #f5f7ff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .faq-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .faq-header h2 {
+    font-size: 24px;
+  }
+
+  .view-faqs-btn {
+    align-self: flex-start;
+  }
+}

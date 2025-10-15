@@ -1,0 +1,48 @@
+.process-section {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.process-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.process-image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.process-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  .process-section {
+    padding: 2rem 1rem;
+  }
+
+  .process-image {
+    max-width: 95%;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .process-image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}
+

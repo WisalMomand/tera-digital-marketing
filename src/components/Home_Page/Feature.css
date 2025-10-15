@@ -1,0 +1,98 @@
+/* Feature Section */
+.feature-section {
+  padding: 4rem 0;
+  background-color: #FFFFFF;
+  width: 100%; /* ✅ Changed from 110% to 100% */
+  box-sizing: border-box; /* ✅ Match other sections */
+}
+
+.feature-container {
+  width: 100%;
+  max-width: 100%; /* ✅ Prevent overflow */
+  margin: 0 auto;
+  padding: 0 40px; /* ✅ Exact same padding as header (40px desktop) */
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  box-sizing: border-box; /* ✅ Include padding in width calculation */
+}
+
+/* Card Styles */
+.feature-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: 2px solid #a7f3d0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  border-color: #10b981;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Circle */
+.feature-icon {
+  position: absolute;
+  top: -1.5rem;
+  left: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background: #10b981;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #059669;
+}
+
+.feature-icon .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ffffff;
+}
+
+/* Text Content */
+.feature-content {
+  padding-top: 2rem;
+}
+
+.feature-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 0.75rem;
+}
+
+.feature-content p {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+/* ✅ Responsive - Must match header breakpoints */
+@media (max-width: 1024px) {
+  .feature-container {
+    gap: 1.5rem; /* Slightly reduce gap on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-section {
+    padding: 3rem 0; /* Slightly reduce padding on mobile */
+  }
+  
+  .feature-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 20px; /* ✅ Exact same padding as header on mobile (20px) */
+  }
+  
+  .feature-card {
+    padding: 1.5rem; /* Slightly reduce card padding on mobile */
+  }
+}
+

@@ -1,0 +1,80 @@
+.ourbest-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.ourbest-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; 
+}
+
+.ourbest-image-container {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.ourbest-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ourbest-content {
+  flex: 1 1 400px;
+  max-width: 550px;
+}
+
+.ourbest-heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000080;
+  margin-bottom: 20px;
+}
+
+.ourbest-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.ourbest-list {
+  list-style: disc;
+  list-style-position: inside;  /* ✅ Bring bullets close to text */
+  padding-left: 0;              /* ✅ Remove extra gap */
+  margin-left: 0;               /* ✅ Remove unwanted margin */
+  color: #333;
+  font-size: 1rem;
+}
+
+.ourbest-list li {
+  margin-bottom: 6px;
+  padding-left: 0px;            /* ✅ Small indent for nice spacing */
+}
+
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .ourbest-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ourbest-content {
+    max-width: 100%;
+  }
+
+  .ourbest-list {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+}

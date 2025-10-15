@@ -1,0 +1,73 @@
+.brands {
+  background-color: #FFFFFF;
+  padding: 40px; /* Vertical and horizontal padding */
+  border: 2px solid #c6f7e2;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.brands-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* ✅ Use 100% instead of max-width */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #6b7280;
+  transition: color 0.2s ease;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+}
+
+.brand:hover {
+  color: #111827;
+}
+
+/* ✅ Responsive - Exact match with header */
+@media (max-width: 1024px) {
+  .brands-row {
+    gap: 30px;
+  }
+  
+  .brand {
+    font-size: 1.3rem;
+    min-width: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands {
+    padding: 30px 20px; /* ✅ Exact same padding as header on mobile */
+  }
+  
+  .brands-row {
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .brand {
+    font-size: 1.2rem;
+    min-width: 100px;
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-row {
+    gap: 15px;
+  }
+  
+  .brand {
+    font-size: 1.1rem;
+    min-width: 80px;
+  }
+}

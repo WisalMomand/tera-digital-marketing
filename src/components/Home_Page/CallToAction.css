@@ -1,0 +1,121 @@
+/* Overall Section */
+.cta-section {
+  position: relative;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom right, #e6f5ff, #d8f1ff);
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 1088px;
+  margin: 0 auto;
+  border-radius: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Central Card */
+.cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 42.67px;
+  padding: 50px 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0A1B4D;
+  margin-bottom: 15px;
+}
+
+.cta-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* Form */
+.cta-form {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 14px 18px;
+  border: 1px solid #bbb;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+}
+
+.cta-button {
+  background-color: #00B86B;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #009f5c;
+}
+
+/* Floating Images */
+.floating-img {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Positions for each image to match screenshot */
+.img-g1 { top: 18%; left: 16%; }
+.img-g2 { top: 47%; right: 8%; }
+.img-boy1 { top: 18%; left: 6%; }
+.img-boy2 { bottom: 20%; right: 16%; }
+.img-b1 { top: 15%; right: 15%; width: 80px; height: 80px; border-radius: 50%; }
+.img-b2 { bottom: 6%; left: 15%; width: 80px; height: 80px; border-radius: 50%; }
+.img-f1 { bottom: 20%; left: 5%; }
+.img-f2 { top: 20%; right: 5%; }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .cta-content {
+    padding: 40px 25px;
+  }
+
+  .floating-img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .cta-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-title {
+    font-size: 22px;
+  }
+  .cta-input, .cta-button {
+    width: 100%;
+  }
+  .floating-img {
+    display: none; /* hide floating images on very small screens */
+  }
+}
+

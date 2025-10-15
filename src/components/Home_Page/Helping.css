@@ -1,0 +1,132 @@
+.helping-section {
+  padding: 50px 20px 40px; /* ⬅ reduce bottom padding from 80px to 40px */
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.helping-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch; /* Make both sections equal height */
+  gap: 35px;
+  min-height: 500px; /* Set minimum height for consistency */
+}
+
+.helping-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F7F7F7;
+  border-radius: 20px;
+  height: 100%; /* Match image section height */
+}
+
+.helping-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000080;
+  margin-bottom: 0px; /* Reduced margin */
+}
+
+.helping-description {
+  font-size: 17px;
+  color: #555;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2E2E2E;
+  text-align: left;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  font-size: 16px;
+  color: #444;
+  padding: 1px 0; 
+  padding-left: 30px;
+  position: relative;
+}
+
+.features-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.priority-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  font-style: italic;
+  text-align: left;
+  margin: 0; 
+}
+
+
+.helping-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.best-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 600px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .helping-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .helping-title {
+    font-size: 28px;
+  }
+  
+  .subtitle {
+    font-size: 22px;
+  }
+  
+  .features-list {
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .helping-section {
+    padding: 60px 15px;
+  }
+  
+  .helping-title {
+    font-size: 24px;
+  }
+  
+  .helping-description {
+    font-size: 16px;
+  }
+}
