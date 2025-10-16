@@ -1,8 +1,8 @@
 import React from 'react';
 import './Testimonials.css';
-import Client1 from '../../assets/client1.jpg';
-import Client2 from '../../assets/client2.jpg';
-import Client3 from '../../assets/client3.jpg';
+// import Client1 from '../../assets/client1.jpg';
+// import Client2 from '../../assets/client2.jpg';
+// import Client3 from '../../assets/client3.jpg';
 
 const Testimonial = () => {
   const testimonials = [
@@ -10,7 +10,7 @@ const Testimonial = () => {
       id: 1,
       name: "Bang Upin",
       position: "Pedagang Akongan",
-      image: Client1,
+      image: <img src="/client1.jpg" alt="Client 1" />,
       quote: "Terimakasih banyak, kini ruangangku menjadi lebih mewah dan terlihat mahal",
       rating: 4
     },
@@ -18,7 +18,7 @@ const Testimonial = () => {
       id: 2,
       name: "Ibuk Sukijan",
       position: "Ibu Rumah Tangga",
-      image: Client2,
+      image: <img src="/client2.jpg" alt="Client 2" />,
       quote: "Makasih Panto, aku sekarang berasa tinggal di apartmen karena barang-barang yang terlihat mewah",
       rating: 4
     },
@@ -26,7 +26,7 @@ const Testimonial = () => {
       id: 3,
       name: "Mpok Ing",
       position: "Karyawan Swasta",
-      image: Client3,
+      image: <img src="/client3.jpg" alt="Client 3" />,
       quote: "Sangat terjangkau untuk kantong saya yang tidak terlalu banyak",
       rating: 4
     }
