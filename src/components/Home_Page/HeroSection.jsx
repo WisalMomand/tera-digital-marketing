@@ -3,7 +3,7 @@ import "./HeroSection.css";
 
 const HeroSection = () => {
   return (
-    <section className="header hero-section"> {/* ✅ Reuse header class */}
+    <section className="header hero-section"> 
       <img
         src="/HeroSection.png"
         alt="Hero Section"
