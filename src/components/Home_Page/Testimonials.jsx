@@ -1,8 +1,6 @@
+
 import React from 'react';
 import './Testimonials.css';
-// import Client1 from '../../assets/client1.jpg';
-// import Client2 from '../../assets/client2.jpg';
-// import Client3 from '../../assets/client3.jpg';
 
 const Testimonial = () => {
   const testimonials = [
@@ -10,7 +8,7 @@ const Testimonial = () => {
       id: 1,
       name: "Bang Upin",
       position: "Pedagang Akongan",
-      image: <img src="/client1.jpg" alt="Client 1" />,
+      image: "/client1.jpg", // ✅ from public folder
       quote: "Terimakasih banyak, kini ruangangku menjadi lebih mewah dan terlihat mahal",
       rating: 4
     },
@@ -18,7 +16,7 @@ const Testimonial = () => {
       id: 2,
       name: "Ibuk Sukijan",
       position: "Ibu Rumah Tangga",
-      image: <img src="/client2.jpg" alt="Client 2" />,
+      image: "/client2.jpg", // ✅ from public folder
       quote: "Makasih Panto, aku sekarang berasa tinggal di apartmen karena barang-barang yang terlihat mewah",
       rating: 4
     },
@@ -26,7 +24,7 @@ const Testimonial = () => {
       id: 3,
       name: "Mpok Ing",
       position: "Karyawan Swasta",
-      image: <img src="/client3.jpg" alt="Client 3" />,
+      image: "/client3.jpg", // ✅ from public folder
       quote: "Sangat terjangkau untuk kantong saya yang tidak terlalu banyak",
       rating: 4
     }
@@ -62,6 +60,7 @@ const Testimonial = () => {
                   src={testimonial.image} 
                   alt={testimonial.name}
                   className="avatar-image"
+                  loading="eager" // ✅ loads immediately, no delay
                 />
               </div>
               
