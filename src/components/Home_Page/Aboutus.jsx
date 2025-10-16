@@ -13,12 +13,14 @@ const Aboutus = () => {
 
   return (
     <section className="aboutus-section">
+      {/* Card 1: Image */}
       <div className="aboutus-card image-card">
         <div className="image-container">
           <img 
-            src="/src/assets/laptop.jpg" 
+            src="/laptop.jpg"  // ✅ Correct path for public folder
             alt="Digital marketing professional working on laptop"
             className="about-image"
+            loading="eager" // ✅ loads instantly
           />
         </div>
       </div>
@@ -56,4 +58,5 @@ const Aboutus = () => {
 };
 
 export default Aboutus;
+
 
