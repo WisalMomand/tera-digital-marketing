@@ -136,7 +136,7 @@ const Meeting = () => {
   const teamMembers = [
     {
       id: 1,
-      image: '/src/assets/Expert4.png',
+      image: '/Expert4.png',
       quote: '"We ensure that any information you give is stored immediately by simply contacting our team"',
       name: 'Web Developer',
       role: 'Full Stack',
@@ -145,7 +145,7 @@ const Meeting = () => {
     },
     {
       id: 2,
-      image: '/src/assets/Exp1.jpg',
+      image: '/Exp1.jpg',
       quote: '"We ensure that any information you give is stored immediately by simply contacting our team"',
       name: 'Content Writer',
       role: 'Head of CS',
@@ -154,7 +154,7 @@ const Meeting = () => {
     },
     {
       id: 3,
-      image: '/src/assets/Exp2.jpg',
+      image: '/Exp2.jpg',
       quote: '"We ensure that any information you give is stored immediately by simply contacting our team"',
       name: 'UI/UX Designer',
       role: 'Head of CS',
@@ -163,7 +163,7 @@ const Meeting = () => {
     },
     {
       id: 4,
-      image: '/src/assets/Exp3.jpg',
+      image: '/Exp3.jpg',
       quote: '"We ensure that any information you give is stored immediately by simply contacting our team"',
       name: 'UI/UX Designer',
       role: 'Head of CS',
@@ -172,7 +172,7 @@ const Meeting = () => {
     },
     {
       id: 5,
-      image: '/src/assets/Exp5.png',
+      image: '/Exp5.png',
       quote: '"We ensure that any information you give is stored immediately by simply contacting our team"',
       name: 'UI/UX Designer',
       role: 'Head of CS',
@@ -181,7 +181,7 @@ const Meeting = () => {
     },
     {
       id: 6,
-      image: '/src/assets/Exp6.png',
+      image: '/Exp6.png',
       quote: '"We ensure that any information you give is stored immediately by simply contacting our team"',
       name: 'UI/UX Designer',
       role: 'Head of CS',
@@ -190,7 +190,7 @@ const Meeting = () => {
     },
   ];
 
-  // ✅ Inject responsive styles dynamically
+  
   useEffect(() => {
     const styleTag = document.createElement('style');
     styleTag.innerHTML = `

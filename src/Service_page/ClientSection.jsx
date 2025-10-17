@@ -7,7 +7,7 @@ const ClientSection = () => {
       id: 1,
       name: "Bang Upin",
       position: "Pedagang Akongan",
-      image: "/src/assets/client1.jpg", // Replace with actual image path
+     image: "/client1.jpg",
       quote: "Terimakasih banyak, kini ruangangku menjadi lebih mewah dan terlihat mahal",
       rating: 4
     },
@@ -15,7 +15,7 @@ const ClientSection = () => {
       id: 2,
       name: "Ibuk Sukijan",
       position: "Ibu Rumah Tangga",
-      image: "/src/assets/client2.jpg", // Replace with actual image path
+       image: "/client2.jpg",
       quote: "Makasih Panto, aku sekarang berasa tinggal di apartmen karena barang-barang yang terlihat mewah",
       rating: 4
     },
@@ -23,7 +23,7 @@ const ClientSection = () => {
       id: 3,
       name: "Mpok Ing",
       position: "Karyawan Swasta",
-      image: "/src/assets/client3.jpg", // Replace with actual image path
+        image: "/client3.jpg",
       quote: "Sangat terjangkau untuk kantong saya yang tidak terlalu banyak",
       rating: 4
     }
