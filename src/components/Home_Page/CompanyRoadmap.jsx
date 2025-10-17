@@ -6,32 +6,32 @@ const roadmapData = [
   {
     name: "Asad Ullah",
     role: "Graphic UI/UX Designer, Have 3+ Years Experience",
-    img: "/src/assets/image1.jpg"
+    img: "/image1.jpg"
   },
   {
     name: "Ibrahim Khan",
     role: "Mobile App Developer, Have 8+ Years Of Experience",
-    img: "/src/assets/image2.jpg"
+    img: "/image2.jpg"
   },
   {
     name: "Hamza Gohar",
     role: "Content Writer, Have 5+ Years Of Experience",
-    img: "/src/assets/image3.jpg"
+    img: "/image3.jpg"
   },
   {
     name: "Adnan Sami",
     role: "UX Designer, Have 6+ Years Of Experience",
-    img: "/src/assets/image4.jpg"
+    img: "/image4.jpg"
   },
   {
     name: "Muhammad Wisal",
     role: "Web-Developer, Have 2+ Years Of Experience",
-    img: "/src/assets/wisal.jpg"
+    img: "/wisal.jpg"
   },
   {
     name: "Badar Islam",
     role: "World Press Developer, Have 11+ Years Of Experience",
-    img: "/src/assets/image5.jpg"
+    img: "/image5.jpg"
   }
 ];
 

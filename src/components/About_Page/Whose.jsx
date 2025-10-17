@@ -47,7 +47,7 @@ const Whose = () => {
         </div>
       </div>
 
-      {/* ✅ CompanyRoadmap section placed BELOW the Whose section */}
+      
       <CompanyRoadmap />
         <ClientSection />
     </>
